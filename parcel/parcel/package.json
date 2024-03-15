@@ -5,11 +5,12 @@
   "source": "index.html",
   "scripts": {
     "start": "parcel serve index.html --open --no-cache",
-    "build": "parcel build --no-cache",
+    "build": "parcel build --no-cache ./*.html --public-url https://deimek.github.io/Lokalise",
     "deploy": "gh-pages -b deploy-branch -d dist"
   },
   "author": "",
   "license": "ISC",
+  "homepage": "https://deimek.github.io/Lokalise",
   "devDependencies": {
     "@parcel/reporter-bundle-analyzer": "^2.11.0",
     "@parcel/transformer-sass": "^2.11.0",
