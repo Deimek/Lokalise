@@ -1,0 +1,27 @@
+.free {
+    background-color: #FF9C7D;
+
+    &__wraper {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 161px 0 161px 0;
+        text-align: center;
+    }
+
+    &__title {
+        font-size: 65px;
+        font-weight: 600;
+        line-height: 75px;
+        max-width: 784px;
+        /* 115.385% */
+    }
+
+    &__text {
+        margin: 29px 0 54px 0;
+        font-size: 20px;
+        font-weight: 400;
+        line-height: 30px;
+        /* 150% */
+    }
+}

@@ -7,13 +7,26 @@ body {
     font-family: sans-serif;
 }
 
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+    margin: 0;
+    padding: 0;
+}
+
 a {
     text-decoration: none;
     color: black;
 }
 
 ul,
-ol {
+ol,
+li,
+dl {
     padding: 0;
     margin: 0;
     list-style: none;
@@ -28,3 +41,37 @@ ol {
         padding: 0;
     }
 }
+
+.btn {
+    background-color: transparent;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 600;
+    border: 1px solid rgba(0, 0, 0, 0.50);
+    padding: 0 36px;
+    line-height: 45px;
+    text-align: center;
+
+    &--color {
+        background-color: #FF6336;
+        border: 1px solid transparent;
+        color: #FFF;
+    }
+
+    &--section {
+        line-height: 60px;
+        padding: 0 41px;
+    }
+
+    &--black {
+        background-color: black;
+        font-size: 17px;
+        color: white;
+    }
+}
+
+/* .photo__section:nth-child(odd) {
+    .text-block {
+        order: 1;
+    }
+} */

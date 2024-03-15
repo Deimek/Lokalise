@@ -1,0 +1,25 @@
+.brands {
+    background-color: #FF9C7D;
+    padding: 98px 0 94px 0;
+
+    &__title__block {
+        margin: 0 auto;
+        max-width: 720px;
+        padding: 0 10px;
+    }
+
+    &__title {
+        text-align: center;
+        font-size: 50px;
+        font-weight: 600;
+        line-height: 60px;
+        margin-bottom: 70px;
+    }
+
+    &__img__block {
+        display: flex;
+        justify-content: space-between;
+        gap: 102px;
+    }
+
+}

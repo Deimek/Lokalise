@@ -1,0 +1,37 @@
+.cake {
+    background-color: #DABC98;
+
+    &__wraper {
+        display: flex;
+        padding: 80px 0 80px 0;
+        align-items: center;
+    }
+
+    &__img {
+        max-width: 176px;
+        min-height: 154px;
+        flex-shrink: 0;
+    }
+
+    &__title {
+        font-size: 35px;
+        font-weight: 600;
+        line-height: 50px;
+        margin: 0 125px 0 67px;
+    }
+
+    &__png {
+        width: 128px;
+        height: 116px;
+        flex-shrink: 0;
+    }
+
+    &__png__block {
+        display: flex;
+        gap: 70px;
+        padding-left: 71px;
+        border-left: 1px solid black;
+    }
+
+
+}

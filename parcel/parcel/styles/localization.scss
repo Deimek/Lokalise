@@ -1,0 +1,49 @@
+.localization {
+    padding: 150px 0 120px 0;
+
+    &__wraper {
+        display: flex;
+        gap: 30px;
+    }
+
+    &__title {
+        font-size: 50px;
+        font-weight: 600;
+        line-height: 60px;
+        margin-bottom: 25px;
+    }
+
+    &__artticle__title {
+        font-size: 30px;
+        font-weight: 600;
+        line-height: 40px;
+    }
+
+    &__pharagraph {
+        font-size: 20px;
+        font-weight: 400;
+        line-height: 30px;
+    }
+
+    &__link {
+        font-size: 20px;
+        font-weight: 400;
+        line-height: 30px;
+        /* 150% */
+        text-decoration-line: underline;
+    }
+
+    &__article {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        gap: 30px;
+    }
+
+    &__img {
+        max-width: 179px;
+        max-height: 183px;
+        flex-shrink: 0;
+
+    }
+}

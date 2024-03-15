@@ -1,0 +1,36 @@
+.bird {
+    &__wraper {
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 169px 0 162px 0;
+
+    }
+
+    &__title {
+        max-width: 791px;
+        font-size: 65px;
+        font-weight: 600;
+        line-height: 75px;
+        /* 115.385% */
+    }
+
+    &__text {
+        max-width: 539px;
+        font-size: 25px;
+        font-weight: 400;
+        line-height: 30px;
+        /* 120% */
+    }
+
+    &__img {
+        max-width: 1023px;
+        max-height: 445px;
+        flex-shrink: 0;
+        margin: 25px 0 32px 0;
+    }
+
+
+
+}

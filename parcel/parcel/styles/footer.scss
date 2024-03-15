@@ -1,0 +1,216 @@
+$desktop-xl: 1199px;
+$desktop-m: 991px;
+$tablet-l: 767px;
+$tablet-m: 575px;
+$font: sans-serif;
+
+@mixin desktop-xl {
+    @media (screen and max-width: $desktop-xl) {
+        @content;
+    }
+}
+
+@mixin desktop-m {
+    @media (screen and max-width: $desktop-m) {
+        @content;
+    }
+}
+
+@mixin tablet-l {
+    @media (screen and max-width: $tablet-l) {
+        @content;
+    }
+}
+
+@mixin tablet-m {
+    @media (screen and max-width: $tablet-m) {
+        @content;
+    }
+}
+
+@mixin paragraph-font {
+    font-size: 1.25rem;
+    line-height: 1.875rem;
+
+    @include desktop-m {
+        font-size: 15px;
+        line-height: 15px;
+    }
+
+    @include tablet-l {
+        font-size: 20px;
+        line-height: 30px;
+    }
+}
+
+
+html {
+    font-size: 16px;
+
+    @include tablet-l {
+        font-size: 18px;
+    }
+}
+
+
+
+.footer {
+    background: #eee;
+    padding: 92px 0 43px;
+
+    &__top {
+        display: flex;
+        justify-content: space-between;
+        gap: 34px;
+        border-bottom: 1px solid;
+        padding-bottom: 95px;
+        margin-bottom: 48px;
+
+        @include tablet-l {
+            flex-flow: column;
+        }
+    }
+
+    &__case__studies {
+        display: flex;
+        flex-flow: column;
+        flex: 4;
+        margin-right: 110px;
+
+        @include desktop-xl {
+            margin-right: 0;
+            flex: 5;
+        }
+
+        @include desktop-m {
+            flex: 1;
+        }
+
+        @include tablet-l {
+            align-items: center;
+        }
+
+        img {
+            max-width: 300px;
+            width: 100%;
+            height: 300px;
+            object-fit: cover;
+            margin-bottom: 31px;
+
+            @include desktop-m {
+                display: none;
+            }
+
+            @include tablet-l {
+                display: inline-block;
+                max-width: 100%;
+            }
+        }
+
+        svg {
+            margin-bottom: 11px;
+        }
+    }
+
+    &__heading {
+        font-size: 2.5rem;
+        font-weight: 600;
+        line-height: 3.125rem;
+        margin-bottom: 28px;
+
+        @include desktop-m {
+            font-size: 1.25rem;
+            line-height: 1.563rem;
+            margin-bottom: 21px;
+        }
+
+        @include tablet-l {
+            font-size: 2.5rem;
+            line-height: 3.125rem;
+            align-self: start;
+        }
+    }
+
+    &__text {
+        @include paragraph-font;
+        margin-bottom: 15px;
+    }
+
+    &__link {
+        @include paragraph-font;
+        font-weight: 600;
+    }
+
+    &__nav {
+        flex: 11;
+        display: flex;
+        gap: 34px;
+
+        @include desktop-m {
+            flex: 4;
+        }
+
+        @include tablet-m {
+            flex-wrap: wrap;
+        }
+
+        &__list {
+            flex: 1;
+
+            @include tablet-m {
+                flex: none;
+                width: calc(50% - 34px);
+            }
+
+            &__heading {
+                font-size: 1.25rem;
+                font-weight: 600;
+                line-height: 1.563rem;
+                margin-bottom: 21px;
+            }
+
+            ul {
+                display: flex;
+                flex-flow: column;
+                gap: 15px;
+                font-size: 0.938rem;
+                line-height: 0.938rem;
+            }
+        }
+    }
+
+    &__bottom {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        font-size: 0.75rem;
+        line-height: 0.938rem;
+
+        @include tablet-m {
+            flex-flow: row wrap;
+        }
+
+        &__left {
+            display: flex;
+            gap: 14px;
+
+            @include tablet-m {
+                flex-flow: row wrap;
+                margin-bottom: 14px;
+            }
+
+            svg {
+                min-width: 90px;
+            }
+
+            p {
+                max-width: 300px;
+            }
+        }
+
+        &__right {
+            display: flex;
+            flex-flow: column;
+        }
+    }
+}

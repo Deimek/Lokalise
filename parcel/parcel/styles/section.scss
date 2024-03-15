@@ -1,0 +1,60 @@
+.section {
+    padding: 115px 0;
+
+    &__flax {
+        display: flex;
+
+
+    }
+
+    &__title__block {
+        padding: 14px 0 35px;
+        max-width: 620.016px;
+        min-height: 610px;
+        flex-shrink: 0;
+
+
+
+    }
+
+    &__title {
+        font-size: 65px;
+        font-weight: 600;
+        line-height: 70px;
+        margin-bottom: 51px;
+    }
+
+    &__p {
+        font-size: 25px;
+        font-weight: 400;
+        line-height: 35px;
+        max-width: 450px;
+    }
+
+    &__text {
+        font-size: 15px;
+        font-weight: 400;
+        line-height: 25px;
+    }
+
+    &__btn {
+        margin: 50px 0px 25px 0;
+        display: flex;
+        gap: 10px;
+    }
+
+    &__img__block {
+        padding: 90px 0 35px 0;
+        max-width: 759px;
+        max-height: 529px;
+        flex-shrink: 0;
+
+    }
+
+    &__img {
+        height: 130%;
+        width: 90%;
+
+    }
+
+}
