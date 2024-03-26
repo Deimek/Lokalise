@@ -3,11 +3,24 @@
     padding: 120px 60px 93px 60px;
 
     &__title {
-        font-size: 50px;
+        font-size: 3.125rem;
         font-weight: 600;
-        line-height: 60px;
+        line-height: 3.75rem;
         text-align: center;
         margin-bottom: 58px;
+
+        @include desktop-xl {
+            line-height: 2.75rem;
+            font-size: 2.125rem;
+        }
+
+        @include tablet-l {
+            line-height: 1.9rem;
+            font-size: 1.5rem;
+            max-width: 400px;
+            text-align: start;
+
+        }
     }
 
     &__wraper {
@@ -15,6 +28,14 @@
         gap: 57px;
         flex-wrap: wrap;
         justify-content: space-between;
+
+        @include tablet-l {
+            gap: 15px;
+        }
+
+        @include tablet-m {
+            gap: 5px;
+        }
     }
 
     &__article {
@@ -38,16 +59,26 @@
     } */
 
     &__article__title {
-        font-size: 25px;
+        font-size: 1.563rem;
         font-weight: 600;
-        line-height: 35px;
+        line-height: 2.188;
 
+        @include tablet-l {
+            font-size: 0.9rem;
+            line-height: 1.4rem;
+        }
     }
 
     &__pharahraph {
-        font-size: 18px;
+        font-size: 1.125rem;
         font-weight: 400;
-        line-height: 25px;
+        line-height: 1.563rem;
         margin: 26px 0 20px 0;
+
+        @include tablet-m {
+            font-size: 0.8rem;
+            line-height: 1.2rem;
+            max-width: 200px;
+        }
     }
 }

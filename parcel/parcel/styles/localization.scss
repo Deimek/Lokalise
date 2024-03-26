@@ -1,16 +1,38 @@
 .localization {
     padding: 150px 0 120px 0;
 
+
     &__wraper {
         display: flex;
         gap: 30px;
+
+        @include desktop-m {
+            flex-direction: column;
+            gap: 30px;
+            align-items: center;
+        }
+
     }
 
     &__title {
-        font-size: 50px;
+        font-size: 3.125rem;
         font-weight: 600;
-        line-height: 60px;
+        line-height: 3.75rem;
         margin-bottom: 25px;
+
+        @include desktop-xl {
+            line-height: 2.75rem;
+            font-size: 2.125rem;
+            margin: 0 auto;
+        }
+
+        @include desktop-m {
+            line-height: 2.25rem;
+            font-size: 1.75rem;
+            max-width: 500px;
+            margin: 0 auto;
+
+        }
     }
 
     &__artticle__title {
@@ -38,6 +60,10 @@
         flex-direction: column;
         justify-content: space-between;
         gap: 30px;
+
+        @include desktop-m {
+            max-width: 500px;
+        }
     }
 
     &__img {

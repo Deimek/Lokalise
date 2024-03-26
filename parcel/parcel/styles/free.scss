@@ -7,21 +7,37 @@
         align-items: center;
         padding: 161px 0 161px 0;
         text-align: center;
+
+        @include desktop-m {
+            padding: 80px 0 80px 0;
+        }
     }
 
     &__title {
-        font-size: 65px;
+        font-size: 4.063rem;
         font-weight: 600;
-        line-height: 75px;
+        line-height: 4.688rem;
         max-width: 784px;
+
         /* 115.385% */
+        @include desktop-m {
+            font-size: 2.03rem;
+            line-height: 2.344rem;
+            max-width: 420px;
+        }
+
     }
 
     &__text {
         margin: 29px 0 54px 0;
-        font-size: 20px;
+        font-size: 1.25rem;
         font-weight: 400;
-        line-height: 30px;
+        line-height: 1.875rem;
+
         /* 150% */
+        @include desktop-m {
+            font-size: 1rem;
+            line-height: 1.1rem;
+        }
     }
 }

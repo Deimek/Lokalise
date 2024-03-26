@@ -2,6 +2,10 @@
     background-color: #FF9C7D;
     padding: 98px 0 94px 0;
 
+    @include tablet-l {
+        padding: 45px 0 45px 0;
+    }
+
     &__title__block {
         margin: 0 auto;
         max-width: 720px;
@@ -10,16 +14,39 @@
 
     &__title {
         text-align: center;
-        font-size: 50px;
+        font-size: 3.125rem;
         font-weight: 600;
-        line-height: 60px;
+        line-height: 3.75rem;
         margin-bottom: 70px;
+
+        @include desktop-xl {
+            line-height: 2.75rem;
+            font-size: 2.125rem;
+            margin-bottom: 35px;
+        }
+
+        @include tablet-l {
+            line-height: 1.9rem;
+            font-size: 1.5rem;
+        }
+
     }
 
     &__img__block {
         display: flex;
         justify-content: space-between;
-        gap: 102px;
+        gap: 75px;
+
+        @include desktop-xl {
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+
+        @include tablet-m {
+            flex-direction: column;
+            align-items: center;
+
+        }
     }
 
 }
