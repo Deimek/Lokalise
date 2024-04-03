@@ -1,8 +1,13 @@
 .section {
     padding: 115px 0;
 
+    @include desktop-xl {
+        padding: 10px 0;
+
+    }
+
     @include desktop-m {
-        padding: 25px 0;
+        padding: 5px 0;
     }
 
 
@@ -11,17 +16,22 @@
 
         @include desktop-xl {
             flex-direction: column;
+
         }
 
     }
 
     &__title-block {
         padding: 14px 0 35px;
-        max-width: 620.016px;
+        max-width: 620px;
         min-height: 610px;
         flex-shrink: 0;
 
-
+        @include desktop-xl {
+            padding: 5px 0 10px 0;
+            min-height: 450px;
+            max-width: 800px;
+        }
 
         @include desktop-m {
             padding: 5px 0 5px 0;
@@ -52,6 +62,11 @@
         font-weight: 400;
         line-height: 2.188rem;
         max-width: 450px;
+
+        @include desktop-xl {
+            max-width: 600px;
+
+        }
     }
 
     &__text {
@@ -71,9 +86,15 @@
         max-width: 759px;
         max-height: 529px;
 
+        @include desktop-xl {
+            padding: 10px 0 10px 0;
+            margin-bottom: 15px;
+
+        }
 
         @include desktop-m {
             padding: 5px 0 5px 0;
+            margin-bottom: 5px;
         }
 
 

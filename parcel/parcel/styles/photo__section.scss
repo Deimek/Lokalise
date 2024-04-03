@@ -4,16 +4,17 @@
         padding: 100px 0;
 
         @include desktop-xl {
-            flex-direction: column;
             padding: 50px 0;
         }
 
         @include tablet-l {
             padding: 25px 0;
+            flex-direction: column;
         }
 
         @include desktop-m {
             padding: 10px 0;
+
         }
 
     }
@@ -54,10 +55,11 @@
         @include desktop-xl {
             max-width: 632px;
             max-height: 632px;
+            padding: 50px 55px 50px 35px;
         }
 
-        @include tablet-l {
-            padding: 50px 50px 50px 30px;
+        @include desktop-m {
+            padding: 25px 20px 25px 15px;
         }
     }
 

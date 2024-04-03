@@ -2,6 +2,19 @@
     background-color: #FFF8E4;
     padding: 120px 60px 93px 60px;
 
+    @include desktop-xl {
+        padding: 100px 50px 80px 50px;
+    }
+
+    @include tablet-l {
+        padding: 60px 30px 50px 30px;
+    }
+
+    @include tablet-m {
+        padding: 10px 5px 10px 5px;
+    }
+
+
     &__title {
         font-size: 3.125rem;
         font-weight: 600;
@@ -12,6 +25,7 @@
         @include desktop-xl {
             line-height: 2.75rem;
             font-size: 2.125rem;
+            margin-bottom: 30px;
         }
 
         @include tablet-l {
@@ -19,8 +33,8 @@
             font-size: 1.5rem;
             max-width: 400px;
             text-align: start;
-
         }
+
     }
 
     &__wraper {
@@ -75,10 +89,14 @@
         line-height: 1.563rem;
         margin: 26px 0 20px 0;
 
+        @include desktop-m {
+            max-width: 240px;
+        }
+
         @include tablet-m {
-            font-size: 0.8rem;
-            line-height: 1.2rem;
-            max-width: 200px;
+            font-size: 1.125rem;
+            line-height: 1.563rem;
+            min-width: 300px;
         }
     }
 }
